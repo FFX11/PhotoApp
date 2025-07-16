@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 43 74% 49%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 23%;
+    --secondary-foreground: 43 74% 49%;
+    --muted: 0 0% 23%;
+    --muted-foreground: 43 74% 49%;
+    --accent: 43 74% 49%;
+    --accent-foreground: 0 0% 23%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 30%;
+    --input: 0 0% 30%;
+    --ring: 43 74% 49%;
+    --chart-1: 43 74% 49%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 23%;
+    --sidebar-foreground: 43 74% 49%;
+    --sidebar-primary: 43 74% 49%;
+    --sidebar-primary-foreground: 0 0% 23%;
+    --sidebar-accent: 0 0% 30%;
+    --sidebar-accent-foreground: 43 74% 49%;
+    --sidebar-border: 0 0% 30%;
+    --sidebar-ring: 43 74% 49%;
+  }
+  .dark {
+    --background: 0 0% 23%;
+    --foreground: 43 74% 49%;
+    --card: 0 0% 23%;
+    --card-foreground: 43 74% 49%;
+    --popover: 0 0% 23%;
+    --popover-foreground: 43 74% 49%;
+    --primary: 43 74% 49%;
+    --primary-foreground: 0 0% 23%;
+    --secondary: 0 0% 30%;
+    --secondary-foreground: 43 74% 49%;
+    --muted: 0 0% 30%;
+    --muted-foreground: 43 74% 49%;
+    --accent: 0 0% 30%;
+    --accent-foreground: 43 74% 49%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 30%;
+    --input: 0 0% 30%;
+    --ring: 43 74% 49%;
+    --chart-1: 43 74% 49%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 0 0% 23%;
+    --sidebar-foreground: 43 74% 49%;
+    --sidebar-primary: 43 74% 49%;
+    --sidebar-primary-foreground: 0 0% 23%;
+    --sidebar-accent: 0 0% 30%;
+    --sidebar-accent-foreground: 43 74% 49%;
+    --sidebar-border: 0 0% 30%;
+    --sidebar-ring: 43 74% 49%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+  }
+}

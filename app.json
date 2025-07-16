@@ -1,0 +1,70 @@
+{
+  "expo": {
+    "name": "Construction Photo Manager",
+    "slug": "construction-photo-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0284c7"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs access to camera to take construction site photos.",
+        "NSLocationWhenInUseUsageDescription": "This app needs location access to add GPS coordinates to photos.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app needs location access to continuously track your position while taking photos.",
+        "NSPhotoLibraryAddUsageDescription": "This app needs access to save photos to your photo library.",
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "bundleIdentifier": "com.amerdbau.constructionphotoapp"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "permissions": [
+        "CAMERA",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "package": "com.amerdbau.constructionphotoapp"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "367de6ac-f885-42c1-8162-e4d47dbbbe68"
+      }
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Construction Photo Manager to access your camera to take photos."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Construction Photo Manager to use your location to add GPS coordinates to photos.",
+          "locationAlwaysPermission": "Allow Construction Photo Manager to use your location to add GPS coordinates to photos.",
+          "locationWhenInUsePermission": "Allow Construction Photo Manager to use your location to add GPS coordinates to photos."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow Construction Photo Manager to save photos to your photo library.",
+          "savePhotosPermission": "Allow Construction Photo Manager to save photos to your photo library."
+        }
+      ]
+    ]
+  }
+}
